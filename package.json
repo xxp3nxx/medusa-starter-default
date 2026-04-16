@@ -19,16 +19,18 @@
     "dev": "medusa develop",
     "test:integration:http": "TEST_TYPE=integration:http NODE_OPTIONS=--experimental-vm-modules jest --silent=false --runInBand --forceExit",
     "test:integration:modules": "TEST_TYPE=integration:modules NODE_OPTIONS=--experimental-vm-modules jest --silent=false --runInBand --forceExit",
-    "test:unit": "TEST_TYPE=unit NODE_OPTIONS=--experimental-vm-modules jest --silent --runInBand --forceExit"
+    "test:unit": "TEST_TYPE=unit NODE_OPTIONS=--experimental-vm-modules jest --silent --runInBand --forceExit",
+    "docker:up": "docker compose up --build -d",
+    "docker:down": "docker compose down"
   },
   "dependencies": {
-    "@medusajs/admin-sdk": "2.13.1",
-    "@medusajs/cli": "2.13.1",
-    "@medusajs/framework": "2.13.1",
-    "@medusajs/medusa": "2.13.1"
+    "@medusajs/admin-sdk": "2.13.6",
+    "@medusajs/cli": "2.13.6",
+    "@medusajs/framework": "2.13.6",
+    "@medusajs/medusa": "2.13.6"
   },
   "devDependencies": {
-    "@medusajs/test-utils": "2.13.1",
+    "@medusajs/test-utils": "2.13.6",
     "@swc/core": "^1.7.28",
     "@swc/jest": "^0.2.36",
     "@types/jest": "^29.5.13",
